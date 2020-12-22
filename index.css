@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    outline: none;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+    background: #222;
+}
+
+.top-back {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 140%;
+    background: black;
+    transform: rotate(4deg);
+}
+
+.top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 90%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top h1 {
+    color: white;
+    font-weight: 900;
+}
+
+.invert {
+    position: fixed;
+    top: 0;
+    height: 90%;
+    width: 50%;
+    right: 0;
+    backdrop-filter: invert(1);
+}
+
+.content {
+    margin-top: 70%;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 20%;
+    display: none;
+}
+
+input[type=text] {
+    background: #000;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 3px;
+    transition: box-shadow 0.3s;
+    border: none;
+    caret-color: orangered;
+    text-align: right;
+}
+
+::selection {
+    background: orangered;
+}
+
+input[type=text]:focus {
+    box-shadow: 0px 0px 5px #2b75ed;
+}
+
+.no-input {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: red;
+}
+
+.content-show {
+    display: block;
+}
